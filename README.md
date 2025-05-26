@@ -1,7 +1,7 @@
 # orcawindows2.0
 dowloand# orca--windows 
 
-baixe o arquivo ChemAssistORCA
+baixe os arquivos da pasta orca_manual_viewer
 [https://github.com/pachecobelly/orca--windows/releases](https://github.com/pachecobelly/orca--windows/releases/tag/executavel)
 
 abrindo o executavel você terá essa página 
