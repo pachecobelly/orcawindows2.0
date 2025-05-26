@@ -1,0 +1,412 @@
+
+
+{
+  "keywords": [
+    {
+      "Keyword": "RHF / RKS",
+      "Input Block": "SCF",
+      "Variable": "HFTYP",
+      "Comment": "Selects closed-shell SCF"
+    },
+    {
+      "Keyword": "UHF / UKS",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Selects spin unrestricted SCF"
+    },
+    {
+      "Keyword": "ROHF or ROKS",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Selects open-shell spin restricted SCF"
+    },
+    {
+      "Keyword": "RIJCOSX",
+      "Input Block": "METHOD/SCF",
+      "Variable": "RI,KMatrix",
+      "Comment": "Sets the flag for the efficient RIJCOSX algorithm \n(treat the Columb term via RI and the Exchange \nterm via seminumerical integration) "
+    },
+    {
+      "Keyword": "DIRECTCONV",
+      "Input Block": "SCF",
+      "Variable": "SCFMODE",
+      "Comment": "Selects an integral direct calculation \nSelects an integral conventional calculation "
+    },
+    {
+      "Keyword": "HUECKEL",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Selects the extended Huckel guess"
+    },
+    {
+      "Keyword": "VERYTIGHTSCF",
+      "Input Block": "SCF",
+      "Variable": "",
+      "Comment": "Selects very tight SCF converge"
+    },
+    {
+      "Keyword": "SCFCONVn",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Selects energy convergence check ans \n sets ETol to 10^-n(n=6-10). Also selects \nappropiate thresh, tcut and bfcut values"
+    },
+    {
+      "Keyword": "VERYTIGHTOPT",
+      "Input Block": "GEOM",
+      "Variable": "TollE,TolRMSG",
+      "Comment": "Selects very tight optimization convergence"
+    },
+    {
+      "Keyword": "DIIS",
+      "Input Block": "SCF",
+      "Variable": "DISS",
+      "Comment": "Turns DISS on"
+    },
+    {
+      "Keyword": "NODIIS",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Turns DISS off"
+    },
+    {
+      "Keyword": "SOSCF",
+      "Input Block": "SCF",
+      "Variable": "SOSCF",
+      "Comment": "Turns SOSCF on"
+    },
+    {
+      "Keyword": "NOSOSCF",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Turns SOSCF off"
+    },
+    {
+      "Keyword": "DAMP",
+      "Input Block": "SCF",
+      "Variable": "CNVDAMP",
+      "Comment": "Turns damping on"
+    },
+    {
+      "Keyword": "NODAMP",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Turns damping off"
+    },
+    {
+      "Keyword": "LSHIFT",
+      "Input Block": "SCF",
+      "Variable": "CNVSHIFT",
+      "Comment": "Turns level shifthing on"
+    },
+    {
+      "Keyword": "NOLSHIFT",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Turns level shifthing off"
+    },
+    {
+      "Keyword": "VerySlowConv",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Selects appropriate SCF convenger criteria \nfor very difficult case"
+    },
+    {
+      "Keyword": "HF",
+      "Input Block": "METHOD",
+      "Variable": "METHOD",
+      "Comment": "Selects the Hartree-Fock method"
+    },
+    {
+      "Keyword": "DFT",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Selects the DFT method "
+    },
+    {
+      "Keyword": "FOD",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "FOD analysis employing defaut settings(TPSS/def2-TZVP,TightSCF,SmearTemp= 5000K)"
+    },
+    {
+      "Keyword": "ENERGY or SP",
+      "Input Block": "METHOD",
+      "Variable": "RUNTYP",
+      "Comment": "Selects a single point calculation"
+    },
+    {
+      "Keyword": "OPT",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Selects a geometry optimization calculation(using internal redundant coordinates)"
+    },
+    {
+      "Keyword": "COPT",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Optimization in Cartesian coordinates(if you ar desperate)"
+    },
+    {
+      "Keyword": "ZOPT",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Optimazion in Z-matrix coordinates(dangerous)"
+    },
+    {
+      "Keyword": "GDIIS-COPT",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "COPT using GDIIS"
+    },
+    {
+      "Keyword": "GDIIS-ZOPT",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "ZOPT using GDIIS"
+    },
+    {
+      "Keyword": "GDIIS-OPT",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Normal optimization using GDIIS"
+    },
+    {
+      "Keyword": "ENGRAD",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Selects an energy and gradient calculation"
+    },
+    {
+      "Keyword": "NUMGRAD",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Numerical gradient(has explicitly to be asked for,if analytic gradieint is not available)"
+    },
+    {
+      "Keyword": "NUMFREQ",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Numerical frequencies"
+    },
+    {
+      "Keyword": "NUMNACME",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Numerical non-adiabatic coplings(only for CIS/TD-DFT)"
+    },
+    {
+      "Keyword": "MD",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Molecular dynamic simulation"
+    },
+    {
+      "Keyword": "CIM",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Cluster-In-Molecule calculation"
+    },
+    {
+      "Keyword": "Mass2016",
+      "Input Block": "METHOD",
+      "Variable": "AMASS",
+      "Comment": "Use the latest(2016) atomic masses of the most abudant or most stable isotopes insted of atomic weigths"
+    },
+    {
+      "Keyword": "UseSym",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Turns on the use of molecular symmetry.THIS IS VERY RUDIMENTARY!"
+    },
+    {
+      "Keyword": "NoUseSym",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Turns symmetry off"
+    },
+    {
+      "Keyword": "MP2",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Selects method=HF and DoMP2=true"
+    },
+    {
+      "Keyword": "MP2RI or RI-MP2",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Select the MP2-RI method"
+    },
+    {
+      "Keyword": "SCS-MP2",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Spin-component scaled MP2"
+    },
+    {
+      "Keyword": "RI-SCS-MP2",
+      "Input Block": "",
+      "Variable": "",
+      "Comment": "Spin-component scaled RI-MP2(Synonym is SCR-RI-MP2)"
+    }
+  ],
+  "basis_sets": {
+    "Correlation-cosistent basis sets": [
+      "cc-pVDZ      - Dunning correlation-consistent polarized valence double-zeta",
+      "cc-pVTZ      - Dunning correlation-consistent polarized valence triple-zeta",
+      "cc-pVQZ      - Dunning correlation-consistent polarized valence quadruple-zeta",
+      "cc-pV5Z      - Dunning correlation-consistent polarized valence 5-zeta",
+      "cc-pV6Z      - Dunning correlation-consistent polarized valence 6-zeta",
+      "aug-cc-pVnZ  - (n= D,T,Q,5,6) Augmented with diffuse functions",
+      "cc-pCVnZ     - (n= D,T,Q,5,6) Core-polarized basis sets",
+      "aug-cc-pCVnZ - (n= D,T,Q,5,6) As above, augmented with diffuse functions",
+      "cc-pwCVnZ    - (n= D,T,Q,5) Core-polarized with weighted core functions",
+      "aug-cc-pwCVnZ- (n= D,T,Q,5) As above, augmented with diffuse functions",
+      "cc-pVn(+d)Z  -(n= D,T,Q,5) With tight d functions"
+    ],
+    "SARC basis sets": [
+      "Segmented all-electron relativistically contracted basis sets for use with the DKH2 and ZORA",
+      "Hamiltonians. Available for elements beyond Krypton.",
+      "SARC-DKH-TZVP",
+      "SARC-DKH-TZVPP",
+      "SARC-ZORA-TZVP",
+      "SARC-ZORA-TZVPP",
+      "Note: SARC/J is the general-purpose Coloumb-fitting auxiliary for all SARC orbital basis sets"
+    ],
+    "Partially augmented correlation-consistent basis sets": [
+      "apr-cc-pV(Q+d)Z  - Augumented with sp diffuse functions on Li-Ca",
+      "may-cc-pV(n+d)Z  - (n=T,Q): sp(T), spd(Q) on Li-Ca",
+      "jun-cc-pV(n+d)Z  - (n=D,T,Q): sp(D), spd(T), spdf(Q) on Li-Ca",
+      "jul-cc-pV(n+d)Z  - (n=D,T,Q): spd(D), spdf(T), spdfg(Q) on Li-Ca",
+      "maug-cc-pV(n+d)Z - same as jun-, may-,and apr- for n- D, T, and Q, respectively "
+    ],
+    "Auxiliary basis sets for simultaneously fitting Coulomb and exchange": [
+      "Fitting basis sets developed by Weigend for fitting simultaneously Coulomb and exchanges energies",
+      "They are quite large anf accurate. They fit SCF energies very well but even it they are large they",
+      "do not fit correlation as well as the dedicated  /C auxilliary basis sets",
+      "Def/JK           - Coulomb + Exchange fitting for all def2 basis sets",
+      "Def/JKsmall      - reduced version of the above",
+      "cc-pVnZ/JK       - (n= T,Q,5) for the respective cc-pVnZ orbital basis",
+      "aug-cc-pVnZ/JK   -(n= T,Q,5) for the respective aug-cc-pVnZ orbital basis"
+    ]
+  },
+  "dft_methods": {
+    "Hybrid functionals": [
+      {
+        "Keyword": "B3LYP and B3LYP/G",
+        "Comment": "Popular B3LYP functional (20% HF exchange)."
+      },
+      {
+        "Keyword": "B1LYP",
+        "Comment": "The one-parameter hybrid functional with Becke '88 exchange"
+      },
+      {
+        "Keyword": "B1P",
+        "Comment": "The one-parameter hybrid version of BP86"
+      },
+      {
+        "Keyword": "B3P",
+        "Comment": "The three-parameter hybrid version of BP86"
+      },
+      {
+        "Keyword": "B3PW",
+        "Comment": "The one-parameter hybrid version of  PW91"
+      },
+      {
+        "Keyword": "PBE0",
+        "Comment": "Revised PBE0"
+      }
+    ],
+    "Range-separate hybrid functions": [
+      {
+        "Keyword": "wB97",
+        "Comment": "Head-Gordon's fully variableDF wB97."
+      },
+      {
+        "Keyword": "wB97X",
+        "Comment": "Head-Gordon's DF wB97X with minimal Fock exchange"
+      },
+      {
+        "Keyword": "wB97X-V",
+        "Comment": "Head-Gordon 's DF wB97X-V with VV10 nonlocal correlation"
+      },
+      {
+        "Keyword": "wB97X-D3BJ",
+        "Comment": "Modified version wB97X-V with D3BJ correction by Najibi and Goerigk"
+      },
+      {
+        "Keyword": "wB97M-D4",
+        "Comment": "Modified version of wB97M-V with DFT-D4 correction by Najibi and Goerigk"
+      },
+      {
+        "Keyword": "CAM-B3LYP",
+        "Comment": "Handy's fit"
+      },
+      {
+        "Keyword": "LC-BLYP",
+        "Comment": "Hirao's original application"
+      },
+      {
+        "Keyword": "LC-PBE",
+        "Comment": "range-separated PBE-based hybrid functional with 100% Fock exchange in the longe-range regiime"
+      }
+    ],
+    "Local and gradient corrected functionals": [
+      {
+        "Keyword": "HFS",
+        "Comment": "Hartree-Fock-Slater Exchange only functional"
+      },
+      {
+        "Keyword": "PWLDA",
+        "Comment": "Perdew-Wang parameterization of LDA"
+      },
+      {
+        "Keyword": "GLYP",
+        "Comment": "Gill's '96 exchange and Lee-Yang-Parr correlation"
+      },
+      {
+        "Keyword": "mPWPW",
+        "Comment": "Modified PW exchange and Pw correlation"
+      },
+      {
+        "Keyword": "mPWLYP",
+        "Comment": "Modified PW exchange and LYP correlation"
+      },
+      {
+        "Keyword": "RPW86PBE",
+        "Comment": "PBE correlation with refitted Perdew '86 exchange"
+      },
+      {
+        "Keyword": "PWP",
+        "Comment": "Perdew-Wang '91 exchange and Perdew '86 correlation"
+      }
+    ],
+    "Dispersion corrections": [
+      {
+        "Keyword": "D4",
+        "Comment": "density dependent atom-pairwise dispersion correction with Becke-Johson damping and ATM"
+      },
+      {
+        "Keyword": "D3BJ",
+        "Comment": "Atom-pairwise dispersion correction to the DFT energy with Becke-Johson damping"
+      },
+      {
+        "Keyword": "D3ZERO",
+        "Comment": "Atom-pairwise dispersion correction with zero damping"
+      },
+      {
+        "Keyword": "D2",
+        "Comment": "Empirical dispersion correction from 2006(not recommended)"
+      }
+    ],
+    "Non-local correlation": [
+      {
+        "Keyword": "NL",
+        "Comment": "Does a post-SCF correction on the energy only"
+      },
+      {
+        "Keyword": "SCNL",
+        "Comment": "Fully self-consistent approach, adding the VV10 correlation to the KS Hamiltonian"
+      }
+    ]
+  }
+}
